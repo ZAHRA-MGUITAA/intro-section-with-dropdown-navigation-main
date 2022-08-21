@@ -1,0 +1,207 @@
+body {
+    font-family: "Epilogue";
+    font-size: 18px !important;
+}
+
+
+/* main {
+    position: relative;
+} */
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* margin: 0 auto; */
+}
+
+
+/* ul.navbar,
+ul.login-nav {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul.navbar li,
+ul.login-nav li {
+    display: inline;
+} */
+
+
+/* header {
+    display: flex;
+    gap: 65%;
+} */
+
+.section {
+    display: flex;
+}
+
+.row1 {
+    width: 1440px;
+}
+
+.auth {
+    float: right !important;
+}
+
+.row1 h1 {
+    font-size: 150px;
+}
+
+.row2 img {
+    width: 620px;
+}
+
+button {
+    padding: 20px 25px 20px 25px;
+    background: no-repeat;
+    border: 1px solid #000000;
+    border-radius: 15px;
+    margin-top: 55px;
+    font-size: 25px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 38px;
+}
+
+.logos {
+    position: absolute;
+    bottom: -60px;
+}
+
+.logos img {
+    margin: 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+
+/** menu **/
+
+.menu {
+    margin: 0 auto;
+}
+
+nav {
+    /* height: 60px;
+    background: #fff;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); */
+    display: flex;
+}
+
+.logo {
+    padding: 5px 0 0 80px;
+    width: 150px;
+    height: auto;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    /* float: left; */
+    margin-left: 30px;
+}
+
+nav ul li {
+    background: #fff;
+    position: relative;
+    list-style: none;
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    padding: 0 15px;
+    color: #000000;
+    text-decoration: none;
+    line-height: 60px;
+    font-size: 20px;
+}
+
+
+/* nav ul li a:hover {
+    background: #243342;
+} */
+
+nav ul ul {
+    position: absolute;
+    top: 60px;
+    display: none;
+}
+
+nav ul li:hover .down {
+    display: none;
+}
+
+nav ul li .up {
+    display: none;
+}
+
+nav ul li:hover .up {
+    display: inline-block;
+}
+
+nav ul li:hover>ul {
+    display: block;
+}
+
+nav ul ul li {
+    width: 200px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+
+.auth {
+    float: right !important;
+    margin-right: 20px;
+    position: absolute;
+    right: 20px;
+}
+
+.register:hover {
+    border: 2px solid;
+    border-radius: 15px;
+}
+
+
+/* ul li {
+    display: inline-block;
+}
+
+.features,
+.company {
+    display: none;
+    position: absolute;
+    box-shadow: 0px 0px 10px gray;
+    padding: 10px;
+}
+
+.features a,
+.company a {
+    padding-top: 20px;
+}
+
+.dropdown-features:hover .features,
+.dropdown-company:hover .company {
+   
+    display: flex;
+    flex-direction: column !important;
+    position: absolute;
+}
+
+.features:hover {
+    z-index: 99;
+}
+
+li.dropdown-features,
+li.dropdown-company {
+    position: relative;
+} */
