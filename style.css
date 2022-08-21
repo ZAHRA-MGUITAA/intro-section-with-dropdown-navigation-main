@@ -14,6 +14,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     /* margin: 0 auto; */
+    margin-top: 40px;
 }
 
 
@@ -39,7 +40,7 @@ ul.login-nav li {
 }
 
 .row1 {
-    width: 1440px;
+    width: 640px;
 }
 
 .auth {
@@ -47,11 +48,11 @@ ul.login-nav li {
 }
 
 .row1 h1 {
-    font-size: 150px;
+    font-size: 80px;
 }
 
 .row2 img {
-    width: 620px;
+    width: 400px;
 }
 
 button {
@@ -59,18 +60,17 @@ button {
     background: no-repeat;
     border: 1px solid #000000;
     border-radius: 15px;
-    margin-top: 55px;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 p {
     font-size: 18px;
-    line-height: 38px;
+    line-height: 32px;
 }
 
 .logos {
     position: absolute;
-    bottom: -60px;
+    bottom: 0;
 }
 
 .logos img {
