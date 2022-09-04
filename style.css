@@ -209,6 +209,10 @@ li.dropdown-company {
 } */
 
 @media(max-width:600px) {
+    /* ha li badalt */
+    .row1 {
+        width: 100%;
+    }
     nav .navbar,
     nav .auth {
         display: none;
@@ -223,7 +227,7 @@ li.dropdown-company {
     }
     .section {
         flex-direction: column-reverse;
-        margin-top: 200px;
+        margin-top: 200px; /*raj3i hada 390px*/
     }
     .row2 img {
         width: 315px;
