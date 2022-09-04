@@ -134,6 +134,8 @@ nav ul ul {
     position: absolute;
     top: 60px;
     display: none;
+    background: #ffffff;
+    z-index: 99;
 }
 
 nav ul li:hover .down {
@@ -205,3 +207,33 @@ li.dropdown-features,
 li.dropdown-company {
     position: relative;
 } */
+
+@media(max-width:600px) {
+    nav .navbar,
+    nav .auth {
+        display: none;
+    }
+    a.icon {
+        position: absolute;
+        right: 10px;
+        font-size: 35px;
+    }
+    img.logo {
+        padding: 0;
+    }
+    .section {
+        flex-direction: column-reverse;
+        margin-top: 200px;
+    }
+    .row2 img {
+        width: 315px;
+    }
+    .container {
+        position: absolute;
+        /* top: 50%; */
+        /* left: 50%; */
+        /* transform: translate(-50%, -50%); */
+        /* margin: 0 auto; */
+        /* margin-top: 40px; */
+    }
+}
