@@ -49,6 +49,7 @@ ul.login-nav li {
 
 .row1 h1 {
     font-size: 80px;
+    max-width: 525px;
 }
 
 .row2 img {
@@ -57,15 +58,17 @@ ul.login-nav li {
 
 button {
     padding: 20px 25px 20px 25px;
-    background: no-repeat;
     border: 1px solid #000000;
     border-radius: 15px;
     font-size: 20px;
+    color: #ffffff;
+    background: #000000;
 }
 
 p {
     font-size: 18px;
     line-height: 32px;
+    max-width: 500px;
 }
 
 .logos {
@@ -80,6 +83,7 @@ p {
 a {
     text-decoration: none;
     color: #000000;
+    font-size: 18px !important;
 }
 
 
@@ -87,6 +91,7 @@ a {
 
 .menu {
     margin: 0 auto;
+    padding: 5px 0 0 80px;
 }
 
 nav {
@@ -96,10 +101,16 @@ nav {
     display: flex;
 }
 
+ul.navbar {
+    z-index: 99;
+    display: flex;
+}
+
 .logo {
-    padding: 5px 0 0 80px;
-    width: 150px;
-    height: auto;
+    /* padding: 5px 0 0 80px; */
+    width: 80px;
+    height: 32px;
+    transform: translate(0%, 50%);
 }
 
 nav ul {
@@ -168,8 +179,8 @@ nav ul ul li {
     right: 20px;
 }
 
-.register:hover {
-    border: 2px solid;
+.auth a:hover {
+    border: 2px solid rgb(86, 86, 88);
     border-radius: 15px;
 }
 
@@ -208,36 +219,132 @@ li.dropdown-company {
     position: relative;
 } */
 
+.mobile-hero {
+    display: none;
+}
+
+a.icon {
+    display: none;
+}
+
+a#hamburger-close {
+    display: none;
+}
+
 @media(max-width:600px) {
+    .container {
+        width: 100% !important;
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: none;
+        margin: auto;
+        margin-top: 0;
+    }
     /* ha li badalt */
     .row1 {
         width: 100%;
     }
-    nav .navbar,
+    /* nav .navbar,
     nav .auth {
         display: none;
-    }
+    } */
     a.icon {
         position: absolute;
-        right: 10px;
+        right: -40px;
         font-size: 35px;
+        top: 10px;
     }
     img.logo {
         padding: 0;
     }
     .section {
         flex-direction: column-reverse;
-        margin-top: 200px; /*raj3i hada 390px*/
+        margin-top: 50px;
+        /*raj3i hada 390px*/
     }
     .row2 img {
-        width: 315px;
+        width: 100%;
     }
-    .container {
+    .logos {
+        position: relative;
+        display: flex;
+        margin-top: 40px;
+    }
+    .mobile-hero {
+        display: block;
+    }
+    .desktop-hero {
+        display: none;
+    }
+    .row1 h1 {
+        font-size: 41px;
+        text-align: center;
+    }
+    .btn {
+        text-align: center;
+    }
+    p {
+        text-align: center;
+    }
+    a.icon {
+        display: block;
+    }
+    .logo {
+        transform: translate(0, 0);
+    }
+    .menu {
+        padding: 0;
+    }
+    nav {
+        display: block;
+    }
+    ul.navbar {
+        display: none;
+    }
+    nav ul li {
+        display: block;
+    }
+    ul.auth {
+        left: 0;
+    }
+    .navbar {
+        background: #ffffff;
+        z-index: 999 !important;
+        position: fixed;
+        height: 100%;
+        right: -56px;
+        top: 0;
+        /* width: 190px;*/
+        padding: 30px;
+        right: 60px;
+        top: 0;
+        width: 55%;
+        padding-top: 100px;
+    }
+    .auth {
+        position: initial;
+    }
+    a#hamburger-close {
+        display: none;
         position: absolute;
-        /* top: 50%; */
-        /* left: 50%; */
-        /* transform: translate(-50%, -50%); */
-        /* margin: 0 auto; */
-        /* margin-top: 40px; */
+        right: 12px;
+        z-index: 99999 !important;
+        top: 15px;
+    }
+    .auth li:nth-child(2) a {
+        border: 2px solid rgb(86, 86, 88);
+        border-radius: 15px;
+        margin: 5px 0;
+        width: 100%;
+    }
+    .auth {
+        float: none !important;
+        margin-right: auto;
+        right: auto;
+        text-align: center;
+    }
+    nav ul li a {
+        padding: 0 5px;
     }
 }
